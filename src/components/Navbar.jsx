@@ -2,8 +2,8 @@ import { Mail } from "react-feather";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between px-12 py-6">
-      <div className="flex items-center gap-4">
+    <div className="flex justify-between px-4 lg:px-12 py-6">
+      <div className="flex items-center gap-2 lg:gap-4">
         <div className="hover:text-white duration-300 cursor-pointer">
           Linkedin
         </div>

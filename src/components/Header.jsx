@@ -4,11 +4,11 @@ const Header = () => {
   return (
     <div className="flex flex-col items-center my-40">
       <div className="flex flex-col items-center">
-        <div className="flex gap-3 text-6xl">
+        <div className="flex gap-3 text-3xl lg:text-6xl">
           <div className=" gradient font-semibold">Hey, I am</div>
           <div className="text-white  font-bold">SK.</div>
         </div>
-        <div className="gradient text-xl mt-3">
+        <div className="gradient lg:text-xl mt-3">
           I navigate the digital realm, one pixel at a time.
         </div>
         {/* <div className="mt-8">
@@ -16,7 +16,7 @@ const Header = () => {
           Latest work <ArrowUpRight className="inline ml-1 bg-transparent" />
         </button>
       </div> */}
-        <div className="text-xl mt-10 ">
+        <div className="lg:text-xl mt-6  lg:mt-10 ">
           <span className="cursor-pointer text-white border-b border-transparent duration-300 hover:border-[#FD9556] ">
             Latest work
           </span>
