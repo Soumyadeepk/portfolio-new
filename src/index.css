@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  background: #171819;
-  color: #808081;
-  font-family: "Nunito", sans-serif;
+body {
+  background: black;
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
   letter-spacing: 0.025rem;
 }
 

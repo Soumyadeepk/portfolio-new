@@ -2,51 +2,30 @@ import { ArrowUpRight } from "react-feather";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center my-32 lg:my-40">
-      <div className="w-4/5 lg:w-2/3">
-        <div className="flex gap-4 items-center">
-          <div className="text-2xl text-white font-bold">Latest works</div>
-          <div className="w-10 h-1 bg-[#FD9556] rounded-full"></div>
+    <div className="pl-32 mt-40">
+      <div className="flex gap-4 items-center">
+        <div className="text-2xl">Latest works</div>
+        <div className="w-8 h-1 bg-purple-300 rounded-full"></div>
+      </div>
+      <div className="mt-4 text-primaryText font-thin tracking-wide w-4/5">
+        Through this project, I've crafted a virtual grooming store that
+        demonstrates my proficiency in creating an immersive online shopping
+        experience.
+      </div>
+      <div className="w-full flex gap-10 mt-12">
+        <div className="bg-[#D0CFF4] w-[40vw] h-[60vh] flex flex-col items-center justify-center rounded-2xl">
+          <img
+            src="/assets/tgs1.svg"
+            alt=""
+            className="w-[25vw] h-[40vh] object-contain"
+          />
         </div>
-        <div className="lg:flex justify-between mt-6 lg:mt-12">
-          <div className="w-72 h-96 bg-gray-800">
-            {/* <img src="" alt="" /> */}
-          </div>
-          <div className="w-4/5 lg:w-1/2 mt-6 lg:mt-0">
-            <div className="text-white text-xl font-semibold">
-              The grooming store
-            </div>
-            <div className="mt-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              consectetur nisi dolor a, quia ab
-            </div>
-            <div className="mt-6   cursor-pointer inline-block">
-              <span className="text-white border-b border-transparent hover:border-[#FD9556] duration-300">
-                View live{" "}
-              </span>
-              <ArrowUpRight className="inline bg-transparent" color="#FD9556" />
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col-reverse lg:flex-row justify-between mt-20 lg:mt-40">
-          <div className="w-4/5 lg:w-1/2 mt-6 lg:mt-0">
-            <div className="text-white text-xl font-semibold">
-              The grooming store
-            </div>
-            <div className="mt-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              consectetur nisi dolor a, quia ab
-            </div>
-            <div className="mt-6   cursor-pointer inline-block">
-              <span className="text-white border-b border-transparent hover:border-[#FD9556] duration-300">
-                View live{" "}
-              </span>
-              <ArrowUpRight className="inline bg-transparent" color="#FD9556" />
-            </div>
-          </div>
-          <div className="w-72 h-96 bg-gray-800">
-            {/* <img src="" alt="" /> */}
-          </div>
+        <div className="bg-[#D0CFF4] w-[30vw] h-[65vh] flex flex-col items-center justify-center rounded-3xl mt-6">
+          <img
+            src="/assets/tgs2.png"
+            alt=""
+            className="w-[25vw] h-[40vh] object-contain"
+          />
         </div>
       </div>
     </div>

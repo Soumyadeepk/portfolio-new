@@ -1,6 +1,6 @@
 const TechStacks = () => {
   return (
-    <div className="flex flex-col items-center lg:my-60">
+    <div className="mt-40">
       <div className="text-xl lg:text-2xl text-white font-semibold">
         Tech stacks
       </div>
