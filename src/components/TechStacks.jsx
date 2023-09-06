@@ -1,46 +1,41 @@
-const TechStacks = () => {
-  const techConstants = [
-    {
-      name: "React",
-      logo: "/assets/react.png",
-    },
-    {
-      name: "Next.js",
-      logo: "/assets/next.png",
-    },
-    {
-      name: "Tailwind CSS",
-      logo: "/assets/tailwind.png",
-    },
-    {
-      name: "GSAP",
-      logo: "/assets/gsap.png",
-    },
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap/all";
+import { useEffect } from "react";
 
-    {
-      name: "Node.js",
-      logo: "/assets/node.png",
-    },
-    {
-      name: "Express.js",
-      logo: "/assets/express.png",
-    },
-    {
-      name: "MongoDB",
-      logo: "/assets/mongo.png",
-    },
-    {
-      name: "Firebase",
-      logo: "/assets/firebase.png",
-    },
-  ];
+const TechStacks = () => {
+  const animateData = () => {
+    gsap.registerPlugin(ScrollTrigger);
+    const tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".tech_heading",
+        start: "top 80%",
+      },
+    });
+
+    tl1.fromTo(
+      ".tech_heading",
+      0.6,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        stagger: 0.6,
+      }
+    );
+  };
+
+  useEffect(() => {
+    animateData();
+  }, []);
+
   return (
     <div className="mt-32 lg:mt-40">
-      <div className="flex gap-4 items-center">
+      <div className="tech_heading flex gap-4 items-center">
         <div className="text-2xl">Tech stacks I use</div>
         <div className="w-8 h-1 bg-purple-300 rounded-full"></div>
       </div>
-      <div className="grid grid-cols-4 lg:w-10/12 justify-items-center items-center gap-y-6 mt-8 lg:mt-12">
+      <div className="tech_heading grid grid-cols-4 lg:w-10/12 justify-items-center items-center gap-y-6 mt-8 lg:mt-12">
         <div className="">
           <img
             src="/assets/react.png"

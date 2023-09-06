@@ -1,8 +1,30 @@
+import { gsap } from "gsap/all";
+import { useEffect } from "react";
 import { Instagram, Linkedin, Mail, Twitter } from "react-feather";
 
 const SideCard = () => {
+  const animateData = () => {
+    const tl = gsap.timeline();
+    tl.fromTo(
+      ".sidecard",
+      0.6,
+      {
+        x: 100,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        stagger: 0.2,
+        opacity: 1,
+        delay: 0.6,
+      }
+    );
+  };
+  useEffect(() => {
+    animateData();
+  }, []);
   return (
-    <div className="relative lg:fixed lg:top-1/2 lg:-translate-y-1/2 lg:right-10 bg-white bg-opacity-5 lg:min-h-[65vh] lg:w-[23vw] mx-4 lg:mx-0 rounded-3xl py-8 lg:py-6 px-6 flex flex-col items-center justify-center">
+    <div className="sidecard opacity-0 relative lg:fixed lg:top-1/2 lg:-translate-y-1/2 lg:right-10 bg-white bg-opacity-5 lg:min-h-[65vh] lg:w-[23vw] mx-4 lg:mx-0 rounded-3xl py-8 lg:py-6 px-6 flex flex-col items-center justify-center">
       <div className="w-11/12">
         <div className="flex justify-end items-center w-full ">
           <div className="bg-purple-300 text-black font-semibold text-xs py-1 px-3 rounded-full ">

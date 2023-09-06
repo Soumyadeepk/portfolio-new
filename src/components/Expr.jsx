@@ -1,12 +1,58 @@
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap/all";
+import { useEffect } from "react";
+
 const Expr = () => {
+  const animateData = () => {
+    gsap.registerPlugin(ScrollTrigger);
+    const tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".work_heading",
+        start: "top 80%",
+      },
+    });
+
+    tl1.fromTo(
+      ".work_heading",
+      0.6,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+      }
+    );
+
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".work_heading",
+        start: "top 50%",
+      },
+    });
+
+    tl2.fromTo(
+      ".work_exp",
+      0.6,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        stagger: 0.6,
+      }
+    );
+  };
+  useEffect(() => {
+    animateData();
+  }, []);
   return (
     <div className="mt-32 lg:mt-40">
-      <div className="flex gap-4 items-center">
+      <div className="work_heading flex gap-4 items-center">
         <div className="text-2xl">Work Experience</div>
         <div className="w-8 h-1 bg-purple-300 rounded-full"></div>
       </div>
 
-      <div className="flex gap-10 mt-10 lg:mt-20">
+      <div className="work_exp flex gap-10 mt-10 lg:mt-20">
         <div className="flex flex-col items-center">
           <div className="w-3 h-3 rounded-full bg-white bg-opacity-20"></div>
           <div className="h-full w-px bg-white bg-opacity-20"></div>
@@ -23,7 +69,7 @@ const Expr = () => {
         </div>
       </div>
 
-      <div className="flex gap-10 mt-20">
+      <div className="work_exp flex gap-10 mt-20">
         <div className="flex flex-col items-center">
           <div className="w-3 h-3 rounded-full bg-white bg-opacity-20"></div>
           <div className="h-full w-px bg-white bg-opacity-20"></div>

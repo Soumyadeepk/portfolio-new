@@ -1,6 +1,36 @@
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap/all";
+import { useEffect } from "react";
+
 const Footer = () => {
+  const animateData = () => {
+    gsap.registerPlugin(ScrollTrigger);
+    const tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".footer",
+        start: "top 80%",
+      },
+    });
+
+    tl1.fromTo(
+      ".footer",
+      0.6,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        stagger: 0.6,
+      }
+    );
+  };
+
+  useEffect(() => {
+    animateData();
+  }, []);
+
   return (
-    <div className="my-32 lg:my-40">
+    <div className="footer my-32 lg:my-40">
       <div className="text-2xl">Lastly,</div>
 
       <div className="font-thin mt-2 lg:mt-4 lg:w-4/5 text-justify text-primaryText">
