@@ -1,6 +1,5 @@
 import { gsap } from "gsap/all";
 import { useEffect } from "react";
-import { Mail } from "react-feather";
 
 const Navbar = () => {
   const animateData = () => {

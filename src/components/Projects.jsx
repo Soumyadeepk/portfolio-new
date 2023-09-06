@@ -1,7 +1,6 @@
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap/all";
 import { useEffect } from "react";
-import { ArrowUpRight } from "react-feather";
 
 const Projects = () => {
   const animateData = () => {
