@@ -1,4 +1,5 @@
 import Expr from "./components/Expr";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MyLife from "./components/MyLife";
 import Navbar from "./components/Navbar";
@@ -11,12 +12,13 @@ function App() {
     <div className="">
       <Navbar />
       <SideCard />
-      <div className="w-4/6">
+      <div className="pl-6 pr-6 lg:pr-0 lg:pl-32  lg:w-4/6">
         <Header />
         <MyLife />
         <Projects />
-        {/* <TechStacks /> */}
         <Expr />
+        <TechStacks />
+        <Footer />
       </div>
     </div>
   );

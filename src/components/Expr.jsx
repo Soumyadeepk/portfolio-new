@@ -1,29 +1,42 @@
 const Expr = () => {
   return (
-    <div className="flex flex-col items-center mt-40 mb-20">
-      <div className="w-4/5 lg:w-2/3">
-        <div className="flex gap-4 items-center">
-          <div className="text-2xl text-white font-bold">Experience</div>
-          <div className="w-10 h-1 bg-[#FD9556] rounded-full"></div>
+    <div className="mt-32 lg:mt-40">
+      <div className="flex gap-4 items-center">
+        <div className="text-2xl">Work Experience</div>
+        <div className="w-8 h-1 bg-purple-300 rounded-full"></div>
+      </div>
+
+      <div className="flex gap-10 mt-10 lg:mt-20">
+        <div className="flex flex-col items-center">
+          <div className="w-3 h-3 rounded-full bg-white bg-opacity-20"></div>
+          <div className="h-full w-px bg-white bg-opacity-20"></div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 border-b border-[#333333] mt-12 pb-5">
-          <div className="text-xl text-white">Senior frontend developer</div>
-          <div className="">Kazam EV Tech</div>
-          <div className="italic">August 2022 - Present</div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 pb-5">
-          <div className="">Frontend developer</div>
-          <div className="">Kazam EV Tech</div>
-          <div className="italic">August 2021 - July 2022</div>
+        <div className="">
+          <div className="text-xs font-thin">August 2022 - Present</div>
+          <div className="mt-2 text-lg">Senior frontend developer</div>
+          <div className="text-primaryText">Kazam EV Tech</div>
+          <div className="font-thin text-primaryText lg:w-4/5 mt-4">
+            Through this project, I've crafted a virtual grooming store that
+            demonstrates my proficiency in creating an immersive online shopping
+            experience.
+          </div>
         </div>
       </div>
-      <div className="w-4/5 lg:w-2/3 lg:flex justify-between items-center mt-20 lg:mt-40">
-        <div className="text-sm">
-          <div className="">Site by Soumyadeep Keshri</div>
-          <div className="">Bengaluru, India.</div>
+
+      <div className="flex gap-10 mt-20">
+        <div className="flex flex-col items-center">
+          <div className="w-3 h-3 rounded-full bg-white bg-opacity-20"></div>
+          <div className="h-full w-px bg-white bg-opacity-20"></div>
         </div>
-        <div className="mt-6 lg:mt-0 text-white border-b border-transparent hover:border-[#FD9556] duration-300 text-lg cursor-pointer">
-          Get in touch.
+        <div className="">
+          <div className="text-xs font-thin">August 2021 - July 2022</div>
+          <div className="mt-2 text-lg">Frontend developer</div>
+          <div className="text-primaryText">Kazam EV Tech</div>
+          <div className="font-thin text-primaryText lg:w-4/5 mt-4">
+            Through this project, I've crafted a virtual grooming store that
+            demonstrates my proficiency in creating an immersive online shopping
+            experience.
+          </div>
         </div>
       </div>
     </div>

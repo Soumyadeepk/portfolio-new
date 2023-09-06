@@ -1,11 +1,9 @@
-const MyLife = () => {
+const Footer = () => {
   return (
-    <div className="mt-32 lg:mt-48">
-      <div className="flex items-center gap-3">
-        <div className="text-2xl">My life</div>
-        <div className="w-8 h-1 rounded-2xl bg-purple-300"></div>
-      </div>
-      <div className="mt-2 lg:mt-4 text-primaryText font-thin tracking-wider lg:w-4/5">
+    <div className="my-32 lg:my-40">
+      <div className="text-2xl">Lastly,</div>
+
+      <div className="font-thin mt-2 lg:mt-4 lg:w-4/5 text-justify text-primaryText">
         My tech journey kicked off in 2017 when I embarked on my B.Tech in
         computer science. In 2019, I stumbled upon the captivating realm of web
         development, and I've been riding the coding wave ever since. Fast
@@ -19,4 +17,4 @@ const MyLife = () => {
   );
 };
 
-export default MyLife;
+export default Footer;
