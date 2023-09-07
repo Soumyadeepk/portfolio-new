@@ -62,9 +62,9 @@ const Expr = () => {
           <div className="mt-2 text-lg">Senior frontend developer</div>
           <div className="text-primaryText">Kazam EV Tech</div>
           <div className="font-thin text-primaryText lg:w-4/5 mt-4">
-            Through this project, I've crafted a virtual grooming store that
-            demonstrates my proficiency in creating an immersive online shopping
-            experience.
+            Contributed to the development of the company's mobile app, which
+            aids drivers in efficiently charging their electric vehicles using
+            our IoT-based electric vehicle charger system.
           </div>
         </div>
       </div>
@@ -79,9 +79,14 @@ const Expr = () => {
           <div className="mt-2 text-lg">Frontend developer</div>
           <div className="text-primaryText">Kazam EV Tech</div>
           <div className="font-thin text-primaryText lg:w-4/5 mt-4">
-            Through this project, I've crafted a virtual grooming store that
-            demonstrates my proficiency in creating an immersive online shopping
-            experience.
+            Successfully overhauled the front-end of the company's website with
+            Next.js, leading to a 50% performance improvement, elevating it from
+            42% to 92%.
+            <br />
+            <br />
+            Developed a comprehensive HR management dashboard from the ground up
+            using React.js, which includes employee onboarding and attendance
+            management features.
           </div>
         </div>
       </div>

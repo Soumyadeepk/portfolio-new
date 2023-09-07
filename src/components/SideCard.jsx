@@ -1,6 +1,7 @@
 import { gsap } from "gsap/all";
 import { useEffect } from "react";
 import { Instagram, Linkedin, Mail, Twitter } from "react-feather";
+import useStore from "../store/cardDetails";
 
 const SideCard = () => {
   const animateData = () => {
@@ -44,20 +45,30 @@ const SideCard = () => {
             Base in Bengaluru, India.
           </div>
           <div className="flex gap-2 mt-8">
-            <div className="w-10 h-10 rounded-full border border-gray-500 flex flex-col items-center justify-center">
-              <Linkedin size={16} className="text-gray-500" />
-            </div>
-            <div className="w-10 h-10 rounded-full border border-gray-500 flex flex-col items-center justify-center">
-              <Instagram size={16} className="text-gray-500" />
-            </div>
-            <div className="w-10 h-10 rounded-full border border-gray-500 flex flex-col items-center justify-center">
-              <Twitter size={16} className="text-gray-500" />
-            </div>
+            <a
+              href="https://www.linkedin.com/in/soumyadeep-keshri-8b5881193"
+              target="_blank"
+            >
+              <div className="w-10 h-10 rounded-full border border-gray-500 flex flex-col items-center justify-center">
+                <Linkedin size={16} className="text-gray-500" />
+              </div>
+            </a>
+            <a href="https://www.instagram.com/soumyadeep_k_/" target="_blank">
+              <div className="w-10 h-10 rounded-full border border-gray-500 flex flex-col items-center justify-center">
+                <Instagram size={16} className="text-gray-500" />
+              </div>
+            </a>
+            <a href="mailto:soumyadeep.keshri001@gmail.com">
+              <div className="w-10 h-10 rounded-full border border-gray-500 flex flex-col items-center justify-center">
+                <Mail size={16} className="text-gray-500" />
+              </div>
+            </a>
           </div>
-
-          <button className="w-full py-3 lg:py-2 bg-green-600 font-bold text-black rounded-full mt-8 flex items-center justify-center text-sm">
-            HIRE ME! <Mail size={16} className="ml-2" />
-          </button>
+          <a href="mailto:soumyadeep.keshri001@gmail.com">
+            <button className="w-full py-3 lg:py-2 bg-green-600 hover:bg-white hover:text-black duration-300 font-bold text-black rounded-full mt-8 flex items-center justify-center text-sm">
+              HIRE ME! <Mail size={16} className="ml-2" />
+            </button>
+          </a>
         </div>
       </div>
     </div>

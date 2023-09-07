@@ -34,14 +34,11 @@ const Footer = () => {
       <div className="text-2xl">Lastly,</div>
 
       <div className="font-thin mt-2 lg:mt-4 lg:w-4/5 text-justify text-primaryText">
-        My tech journey kicked off in 2017 when I embarked on my B.Tech in
-        computer science. In 2019, I stumbled upon the captivating realm of web
-        development, and I've been riding the coding wave ever since. Fast
-        forward to 2021, and I've leveled up to a full-time Frontend Developer
-        role, with a recent promotion to the esteemed title of Senior Frontend
-        Maestro. On weekdays, I'm immersed in the world of code, and come the
-        weekend, you can catch me either sipping cocktails in a pub or
-        perfecting the art of lounging like a panda.
+        I am committed to delivering top-notch web and mobile applications that
+        seamlessly blend innovation and quality. My mission is to transform your
+        ideas into reality, offering exceptional value without compromising on
+        excellence. Let's bring your vision to life at a reasonable cost -
+        because your success is my priority.
       </div>
     </div>
   );
