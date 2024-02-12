@@ -33,8 +33,7 @@ const Header = () => {
       </div>
       <div className="h-6 overflow-hidden">
         <div className="heading text-primaryText  lg:w-4/5 tracking-wider font-thin leading-relaxed">
-          I'm a passionate React developer based in Bengaluru, with over two
-          years
+          I'm a passionate Web developer based in Bengaluru, with over two years
         </div>
       </div>
       <div className="h-6 overflow-hidden">

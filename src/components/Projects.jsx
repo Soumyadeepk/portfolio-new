@@ -195,6 +195,32 @@ const Projects = () => {
 export default Projects;
 
 const ProjectFirst = ({ close }) => {
+  const [showPhotos, setShowPhotos] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const photosData = [
+    {
+      path: "/assets/tgs1.svg",
+      title: "Dashboard page",
+      desc: "Users can access ecommerce website analytics.",
+    },
+    {
+      path: "/assets/tgsOrders.png",
+      title: "Orders page",
+      desc: "All website orders are available for viewing in this comprehensive listing section.",
+    },
+    {
+      path: "/assets/tgsViewOrder.png",
+      title: "Order detail page",
+      desc: "Order details page displays comprehensive information regarding individual purchases made on the website.",
+    },
+    {
+      path: "/assets/tgsProducts.png",
+      title: "Products page",
+      desc: "The products listing page showcases a comprehensive array of all available items for browsing and selection.",
+    },
+  ];
+
   const animateFirst = () => {
     const tl = gsap.timeline();
     tl.fromTo(
@@ -218,40 +244,94 @@ const ProjectFirst = ({ close }) => {
       <X
         className=" absolute top-4 right-4 cursor-pointer"
         size={32}
-        onClick={() => close()}
+        onClick={() => {
+          if (showPhotos) {
+            setShowPhotos(false);
+          } else {
+            close();
+          }
+        }}
       />
-      <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 pt-16 lg:pt-0 px-6 lg:px-12">
-        <div className="flex flex-col lg:flex-row gap-10 ">
-          <div className="cursor-pointer  bg-[#D0CFF4] lg:w-[30vw] h-[30vh] lg:h-[60vh] flex flex-col items-center justify-center rounded-3xl">
-            <img
-              src="/assets/tgs1.svg"
-              alt=""
-              className=" px-12 lg:px-0 lg:w-[25vw] h-[40vh] object-contain"
-            />
+
+      {showPhotos ? (
+        <div className="flex w-full">
+          <div className="w-4/5  flex flex-col items-center">
+            <div className="w-[50vw] h-[80vh]">
+              <img
+                src={photosData[index].path}
+                className="w-full h-full"
+                alt=""
+              />
+            </div>
+            <div className="text-xl font-semibold text-purple-400 mt-3">
+              {photosData[index].title}
+            </div>
+            <div className="font-light text-sm text-center w-1/2">
+              {photosData[index].desc}
+            </div>
           </div>
-          <div className="cursor-pointer mt-6 bg-[#D0CFF4] lg:w-[20vw] h-[40vh] lg:h-[60vh] hidden lg:flex flex-col items-center justify-center rounded-3xl">
-            <img
-              src="/assets/tgs2.png"
-              alt=""
-              className="w-[25vw] h-[40vh] object-contain"
-            />
+          <div className="w-1/5 flex flex-col  items-center justify-center gap-4">
+            {photosData.map((el, i) => {
+              return (
+                <div
+                  className="cursor-pointer  bg-[#D0CFF4] w-24 h-24 flex flex-col items-center justify-center"
+                  key={i}
+                  onClick={() => setIndex(i)}
+                >
+                  <img
+                    src={el.path}
+                    alt=""
+                    className=" px-12 lg:px-0 w-20 h-20 object-contain"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className="pt-12">
-          <div className="font-bold text-3xl">TGS Dashboard</div>
-          <div className="font-thin text-sm w-11/12 mt-4 text-primaryText leading-relaxed tracking-wider">
-            The TGS dashboard is a versatile platform designed to help you
-            effortlessly craft and organize your store's product offerings,
-            efficiently oversee and process orders, and gain valuable insights
-            through analytics for The Grooming Store website.
+      ) : (
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 pt-16 lg:pt-0 px-6 lg:px-12">
+          <div className="flex flex-col lg:flex-row gap-10 ">
+            <div className="cursor-pointer  bg-[#D0CFF4] lg:w-[30vw] h-[30vh] lg:h-[60vh] flex flex-col items-center justify-center rounded-3xl">
+              <img
+                src="/assets/tgs1.svg"
+                alt=""
+                className=" px-12 lg:px-0 lg:w-[25vw] h-[40vh] object-contain"
+              />
+            </div>
+            <div className="cursor-pointer mt-6 bg-[#D0CFF4] lg:w-[20vw] h-[40vh] lg:h-[60vh] hidden lg:flex flex-col items-center justify-center rounded-3xl">
+              <img
+                src="/assets/tgs2.png"
+                alt=""
+                className="w-[25vw] h-[40vh] object-contain"
+              />
+            </div>
           </div>
-          <a href="https://tgs-dashboard.netlify.app/" target="_blank">
+          <div className="pt-12">
+            <div className="font-bold text-3xl">TGS Dashboard</div>
+            <div className="font-thin text-sm w-11/12 mt-4 text-primaryText leading-relaxed tracking-wider">
+              The TGS dashboard is a versatile platform designed to help you
+              effortlessly craft and organize your store's product offerings,
+              efficiently oversee and process orders, and gain valuable insights
+              through analytics for The Grooming Store website.
+            </div>
+            {/* <a href="https://tgs-dashboard.netlify.app/" target="_blank">
             <button className="py-2 px-8 rounded-full bg-purple-400 text-sm mt-4 lg:mt-12 border border-purple-400 tracking-wider hover:bg-transparent duration-300">
               View live
             </button>
-          </a>
+          </a> */}
+            <div className="italic text-sm text-white mt-4">
+              *For privacy concerns, login credentials has not been given for
+              the dashboard
+            </div>
+            <button
+              className="hidden lg:block py-2 px-8 rounded-full bg-purple-400 text-sm mt-4 lg:mt-2 border border-purple-400 tracking-wider hover:bg-transparent duration-300"
+              onClick={() => setShowPhotos(true)}
+            >
+              View photos
+            </button>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

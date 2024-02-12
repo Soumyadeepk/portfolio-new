@@ -62,9 +62,26 @@ const Expr = () => {
           <div className="mt-2 text-lg">Senior frontend developer</div>
           <div className="text-primaryText">Kazam EV Tech</div>
           <div className="font-thin text-primaryText lg:w-4/5 mt-4">
-            Contributed to the development of the company's mobile app, which
-            aids drivers in efficiently charging their electric vehicles using
-            our IoT-based electric vehicle charger system.
+            Developed the HR management dashboard from scratch utilizing
+            React.js, including employee onboarding and attendance management,
+            which reduced the time to onboard new employees by 33%.
+          </div>
+          <div className="font-thin text-primaryText lg:w-4/5 mt-4">
+            Created a React Native app for Battery swapping business, showcasing
+            adaptability in mobile application development, by utilizing tried
+            and tested web skillsets.
+          </div>
+          <div className="font-thin text-primaryText lg:w-4/5 mt-4">
+            Built a Svelte/Sveltekit web dashboard for a battery swapping app,
+            enabling efficient battery and dealer management. Developed backend
+            APIs using Node.js and MongoDB for seamless integration and enhanced
+            functionality.
+          </div>
+          <div className="font-thin text-primaryText lg:w-4/5 mt-4">
+            Developed and customized white-labeled EV mobile application using
+            React Native for diverse clients, which increased customer
+            engagement by 15% and reduced development time by 20%, resulting an
+            escalation in the user base by 50%.
           </div>
         </div>
       </div>
@@ -79,14 +96,14 @@ const Expr = () => {
           <div className="mt-2 text-lg">Frontend developer</div>
           <div className="text-primaryText">Kazam EV Tech</div>
           <div className="font-thin text-primaryText lg:w-4/5 mt-4">
-            Successfully overhauled the front-end of the company's website with
-            Next.js, leading to a 50% performance improvement, elevating it from
-            42% to 92%.
-            <br />
-            <br />
-            Developed a comprehensive HR management dashboard from the ground up
-            using React.js, which includes employee onboarding and attendance
-            management features.
+            Reduced the number of lines of code for the React Native app by 30%,
+            by introducing a code splitting strategy on critical flows, and by
+            improving the code modularity.
+          </div>
+          <div className="font-thin text-primaryText lg:w-4/5 mt-4">
+            Enhanced both performance (decreased TTFB from 300ms to 50ms) and UX
+            (increased conversion rate by 3%) of company’s website by replacing
+            it with a server-rendered Next.js app.
           </div>
         </div>
       </div>
