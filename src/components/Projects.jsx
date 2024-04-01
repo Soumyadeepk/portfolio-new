@@ -175,7 +175,7 @@ const Projects = () => {
             onClick={() => handleSecond()}
           >
             <img
-              src="/assets/shop1.svg"
+              src="/assets/shop1.png"
               alt=""
               className="proj4 px-12 lg:px-0 lg:w-[25vw] h-[40vh] object-contain"
             />
@@ -366,7 +366,7 @@ const ProjectSecond = ({ close }) => {
         <div className="flex flex-col lg:flex-row gap-10 ">
           <div className="cursor-pointer  bg-[#D0CFF4] lg:w-[30vw] h-[30vh] lg:h-[60vh] flex flex-col items-center justify-center rounded-3xl">
             <img
-              src="/assets/shop1.svg"
+              src="/assets/shop1.png"
               alt=""
               className=" px-12 lg:px-0 lg:w-[25vw] h-[40vh] object-contain"
             />
