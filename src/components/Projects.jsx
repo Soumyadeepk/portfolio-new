@@ -153,11 +153,12 @@ const Projects = () => {
             />
           </div>
         </div>
+        <div className="text-xl mt-3 lg:mt-0 mb-3">TGS Dashboard</div>
         <div
-          className="flex items-center gap-2 hover:text-purple-400 duration-300 cursor-pointer mt-5 lg:mt-0"
+          className="text-sm flex items-center gap-2 hover:text-purple-400 duration-300 cursor-pointer mt-5 lg:mt-0"
           onClick={() => handleFirst()}
         >
-          View details <ArrowUpRight />{" "}
+          View details <ArrowUpRight size={16} />{" "}
         </div>
         <div className="project2 w-full flex flex-col lg:flex-row gap-10 mt-20">
           <div
@@ -181,11 +182,14 @@ const Projects = () => {
             />
           </div>
         </div>
+        <div className="text-xl mt-3 lg:mt-2 mb-3 text-end">
+          The Grooming Store
+        </div>
         <div
-          className="flex justify-end items-center gap-2 hover:text-purple-400 duration-300 cursor-pointer mt-5"
+          className="text-sm flex justify-end items-center gap-2 hover:text-purple-400 duration-300 cursor-pointer mt-5"
           onClick={() => handleSecond()}
         >
-          View details <ArrowUpRight />{" "}
+          View details <ArrowUpRight size={16} />{" "}
         </div>
       </div>
     </>

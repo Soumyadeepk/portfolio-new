@@ -34,10 +34,10 @@ const MyLife = () => {
         computer science. In 2019, I stumbled upon the captivating realm of web
         development, and I've been riding the coding wave ever since. Fast
         forward to 2021, and I've leveled up to a full-time Frontend Developer
-        role, with a recent promotion to the esteemed title of Senior Frontend
-        Maestro. On weekdays, I'm immersed in the world of code, and come the
-        weekend, you can catch me either sipping mocktails in a cafe or
-        perfecting the art of lounging like a panda.
+        role, with a promotion to the esteemed title of Senior Frontend Maestro.
+        On weekdays, I'm immersed in the world of code, and come the weekend,
+        you can catch me either sipping mocktails in a cafe or perfecting the
+        art of lounging like a panda.
       </div>
     </div>
   );

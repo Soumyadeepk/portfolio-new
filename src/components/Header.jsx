@@ -31,12 +31,12 @@ const Header = () => {
           Welcome to my corner of the web!
         </div>
       </div>
-      <div className="h-6 overflow-hidden">
+      <div className="lg:h-6 lg:overflow-hidden">
         <div className="heading text-primaryText  lg:w-4/5 tracking-wider font-thin leading-relaxed">
-          I'm a passionate Web developer based in Bengaluru, with over two years
+          I'm a passionate Web developer based in Bengaluru, with over 2.6 years
         </div>
       </div>
-      <div className="h-6 overflow-hidden">
+      <div className="lg:h-6 lg:overflow-hidden">
         <div className="heading text-primaryText  lg:w-4/5 tracking-wider font-thin leading-relaxed">
           of experience crafting dynamic and user-friendly web applications.
         </div>
